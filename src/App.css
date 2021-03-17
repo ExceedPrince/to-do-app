@@ -1,0 +1,271 @@
+body {
+  background-color: #f3f0f0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 10px;
+}
+
+.dashboard-ct {
+  height: 100% !important;
+  border: 1px solid rgb(0, 0, 0);
+  width: 350px;
+  margin: 20px 40px;
+  background-color: rgb(244, 249, 255);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.514);
+}
+
+.dashboard {
+  width: 100%;
+}
+
+.dash-name-ct {
+  /*   background-color: rgb(114, 105, 172); */
+  text-align: center;
+}
+
+.board-names {
+  margin: 10px;
+}
+
+.cards-ct {
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+
+.inner-cards-ct {
+  padding-bottom: 30px;
+}
+
+.card-ct {
+  background-color: lightgray;
+  margin: 5px 10px 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+  padding: 5px;
+}
+
+.card-ct:last-of-type {
+  margin-bottom: 0;
+}
+
+.newCardBtn {
+  text-align: right;
+}
+
+input {
+  height: 25px;
+  width: 70%;
+  margin: 5px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+input:focus {
+  outline: none;
+}
+
+#new-dashboard {
+  position: relative;
+  margin-top: auto;
+  margin-left: -300px;
+  transform: translate(-10px, 100%);
+  height: 50px;
+  outline: none;
+  border: 1px solid black;
+  background-color: rgb(46, 170, 21);
+  color: white;
+  font-size: 18px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#new-dashboard:hover {
+  background-color: rgb(93, 212, 69);
+}
+
+.saveButton {
+  opacity: 0;
+  transition: 800ms all;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  padding: 1px 10px;
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid #fff;
+}
+
+.saveButton:hover {
+  background-color: rgb(0, 85, 0);
+}
+
+.dashName input {
+  text-align: left;
+  width: 70%;
+  transition: 800ms all;
+}
+
+.cardButtons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.todoTitle {
+  background: none;
+  border: none;
+  padding: 5px 10px 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.todoTitle:hover {
+  text-decoration: underline;
+}
+
+.cardDesc {
+  display: none;
+  background: #eee;
+  padding: 5px 10px 10px;
+  transition: 1000ms all;
+}
+
+.showCard .cardDesc {
+  display: block !important;
+}
+
+.new-card {
+  outline: none;
+  border: none;
+  position: relative;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  margin: 0 10px;
+  background-color: rgb(16, 72, 192);
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.new-card:hover {
+  background-color: rgb(59, 110, 221);
+}
+.del-card {
+  /* outline: none; */
+  border: none;
+  /* position: relative; */
+  /* transform: translateX(60%); */
+  background-color: rgb(177, 17, 17);
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  padding: 1px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px;
+}
+.del-card:hover {
+  background-color: rgb(204, 50, 50);
+}
+
+.doubleBtn {
+  outline: none;
+  border: none;
+  position: relative;
+  margin: 5px;
+  background-color: rgb(41, 192, 212);
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  padding: 1px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.doubleBtn:hover {
+  background-color: rgb(98, 220, 236);
+}
+
+.editBtn {
+  outline: none;
+  border: none;
+  position: relative;
+  transform: translateX(180%);
+  margin: 5px;
+  background-color: rgb(197, 125, 30);
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  padding: 1px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.editBtn:hover {
+  background-color: rgb(231, 158, 62);
+}
+
+.title {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.desc {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.submitBtn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: none;
+  border: none;
+  margin: 5px;
+  background-color: rgb(197, 125, 30);
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  padding: 1px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.submitBtn:hover {
+  background-color: rgb(231, 158, 62);
+}
+
+@media only screen and (max-width: 450px) {
+  .del-card {
+    transform: translateX(70%);
+  }
+
+  .editBtn {
+    transform: translateX(90%);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .del-card {
+    transform: translateX(0%);
+  }
+
+  .editBtn {
+    transform: translateX(0%);
+  }
+}
